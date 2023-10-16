@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="w-full shadow-navbarShadow h-20 sticky top-0 z-50 bg-bodyColor px-4 text-third">
+    <nav className="w-full shadow-navbarShadow h-20 sticky top-0 z-50 bg-bodyColor px-4 text-primary font-bold">
       <div className="max-w-container h-full mx-auto py-1 flex items-center justify-between">
         {/* logo */}
         <motion.div

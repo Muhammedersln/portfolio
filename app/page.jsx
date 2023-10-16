@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import LeftSide from "@/components/LeftSide";
 import RightSide from "@/components/RightSide";
+import Banner from "@/components/Banner";
 import { motion } from "framer-motion";
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
           <LeftSide></LeftSide>
         </motion.div>
         {/* orta */}
-        <div className=" h-[88vh] mx-auto p-4">b</div>
+        <div className=" h-[88vh] w-full mx-auto p-4">
+          <Banner></Banner>
+        </div>
         {/* SağTaraf */}
         <motion.div
           initial={{ opacity: 0 }}
