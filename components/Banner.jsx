@@ -20,9 +20,8 @@ const Banner = () => {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-4xl lg:text-6xl font-semibold flex flex-col"
-      >
-        Muhammed Eraslan.{" "}
+        className="text-4xl text-primary lg:text-6xl font-semibold flex flex-col">
+        Muhammed Eraslan
         <span className=" text-secondary mt-2 lg:mt-4">
           Web için geliştirme yapıyorum.
         </span>
