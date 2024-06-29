@@ -5,7 +5,6 @@ import monster from "../public/assets/images/monster.png";
 import futbolanaliz from "../public/assets/images/futbolanaliz.png";
 import { TbBrandGithub } from 'react-icons/tb'
 
-
 const Projects = () => {
     return (
         <section id='projeler' className='max-w-container mx-auto lgl:px-20 py-24'>
@@ -27,7 +26,7 @@ const Projects = () => {
                             <p className='text-secondary text-sm tracking-wide'> Öne Çıkan Proje</p>
                             <h3 className='text-2xl font-bold text-primary'> Yolo ile Futbol Analiz Uygulaması</h3>
                             <p className='bg-dark2 text-sm md:text-base p-2 md:p-6 rounded-md text-secondary'>
-                                Bu proje <span className='text-primary'>Lisans Bitirme Tezim'</span>de geliştirdiğim bir projedir. Yolo yapay zeka modelini kullanarak geliştirdim. Proje, bir futbol maçını analiz ederek, maç içerisindeki <span className='text-primary'>oyuncu, hakem ve topu </span> tespit eder. Bu tespitler sonucunda maçı analiz eder ve takımların topla oynama yüzdesini hesaplar. Ve bunu arayüzde gösterir.
+                                Bu proje <span className='text-primary'>Lisans Bitirme Tezim&apos;de</span> geliştirdiğim bir projedir. Yolo yapay zeka modelini kullanarak geliştirdim. Proje, bir futbol maçını analiz ederek, maç içerisindeki <span className='text-primary'>oyuncu, hakem ve topu</span> tespit eder. Bu tespitler sonucunda maçı analiz eder ve takımların topla oynama yüzdesini hesaplar. Ve bunu arayüzde gösterir.
                             </p>
                             <ul className='text-xs md:text-sm tracking-wide flex gap-2 md:gap-5 justify-between text-dark'>
                                 <li>Python</li>
@@ -38,7 +37,7 @@ const Projects = () => {
                             </ul>
                             <div className='text-2xl flex gap-4'>
                                 <a href="https://github.com/Muhammedersln/Graduation-Project--Football-Analysis" target='_blank'>
-                                    <TbBrandGithub className=' text-secondary hover:text-primary duration-300'></TbBrandGithub>
+                                    <TbBrandGithub className='text-secondary hover:text-primary duration-300'></TbBrandGithub>
                                 </a>
                             </div>
                         </div>
@@ -72,7 +71,7 @@ const Projects = () => {
                             </ul>
                             <div className='text-2xl flex gap-4'>
                                 <a href="https://github.com/Muhammedersln/Graduation-Project--Football-Analysis" target='_blank'>
-                                    <TbBrandGithub className=' text-secondary hover:text-primary duration-300'></TbBrandGithub>
+                                    <TbBrandGithub className='text-secondary hover:text-primary duration-300'></TbBrandGithub>
                                 </a>
                             </div>
                         </div>

@@ -13,7 +13,7 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-third font-medium flex flex-col gap-4">
           <p>
-            Merhaba, ben Muhammed Eraslan. 23 yaşındayım. Turgut Özal Üniversitesi Yazılım Mühendisliği bölümünden 2024'te mezun oldum. Üniversite hayatım süresince Java, Python, C# ve .NET dillerinde kendimi geliştirme fırsatı buldum. Şu anda Python, React ve .NET dillerine hakimim ve bu alanda projeler geliştiriyorum. Deneyim kazanmak ve kendimi daha da geliştirmek için yeni projeler yapmayı hedefliyorum.
+            Merhaba, ben Muhammed Eraslan. 23 yaşındayım. Turgut Özal Üniversitesi Yazılım Mühendisliği bölümünden 2024&apos;te mezun oldum. Üniversite hayatım süresince Java, Python, C# ve .NET dillerinde kendimi geliştirme fırsatı buldum. Şu anda Python, React ve .NET dillerine hakimim ve bu alanda projeler geliştiriyorum. Deneyim kazanmak ve kendimi daha da geliştirmek için yeni projeler yapmayı hedefliyorum.
           </p>
           <ul className="max-w-[450px] text-sm font-normal grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
@@ -67,7 +67,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
