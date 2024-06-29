@@ -14,40 +14,41 @@ const Archive = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
                 <ArchiveCard
-                    title="Proje adı"
-                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
-                    listItems={['React', 'Tailwind', 'Next.js']}
-                    link="https://www.google.com"
+                    title="Unity RunController"
+                    des="Unity oyun moturu ile geliştirdiğim Hyper Casual platform oyunu. Oyunun amacı, karakteri engellerden kaçırarak maksimum skor yapmaktır."
+                    listItems={['Unity', 'C#', 'Blender']}
+                    link="https://github.com/Muhammedersln/Unity-RunController"
                 />
                 <ArchiveCard
-                    title="Proje adı"
-                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
-                    listItems={['React', 'Tailwind', 'Next.js']}
-                    link="https://www.google.com"
+                    title="Mami Flix"
+                    des="React.js  ile geliştirdiğim Netflix benzeri film ve dizi platformu. 
+                    Tailwind Css ile tasarlanmıştır. API üzerinden veri çekilerek oluşturulmuştur."
+                    listItems={['React', 'API', 'Next.js']}
+                    link="https://github.com/Muhammedersln/MamiFlix"
                 />
                 <ArchiveCard
-                    title="Proje adı"
-                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
-                    listItems={['React', 'Tailwind', 'Next.js']}
-                    link="https://www.google.com"
+                    title="Java Scrum"
+                    des="Java ile geliştirdiğim bu projede scrum, proje yönetimi ve takım yönetimi üzerine bir uygulama geliştirdim."
+                    listItems={['Java', 'JavaFX', 'Mysql']}
+                    link="https://github.com/Muhammedersln/javaMysql"
                 />
                 <ArchiveCard
-                    title="Proje adı"
-                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+                    title="Portfolio"
+                    des="Bu portfolyo sitesi, React.js ve Tailwind Css ile geliştirilmiştir. Next.js ile SSR özelliği eklenmiştir. Şu an gördüğünüz site bu projedir."
                     listItems={['React', 'Tailwind', 'Next.js']}
-                    link="https://www.google.com"
+                    link="https://www.muhammederaslan.com"
                 />
                 <ArchiveCard
-                    title="Proje adı"
-                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+                    title="Hava Durumu"
+                    des="Next.js ile geliştirdiğim bu projede hava durumu bilgilerini gösteren bir uygulama geliştirdim. Tasarımı Tailwind Css ile yapılmıştır."
                     listItems={['React', 'Tailwind', 'Next.js']}
-                    link="https://www.google.com"
+                    link="https://weather-app-sooty-eta.vercel.app/"
                 />
                 <ArchiveCard
-                    title="Proje adı"
-                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
-                    listItems={['React', 'Tailwind', 'Next.js']}
-                    link="https://www.google.com"
+                    title="Github Arama Motoru"
+                    des="Github üzerinde arama yaparak kullanıcıları ve repoları listeleyen bir uygulama. React.js ve Tailwind Css ile geliştirilmiştir."
+                    listItems={['React', 'Next.js']}
+                    link="https://github.com/Muhammedersln/Github-Search"
                 />
                 {
                     show && (
@@ -58,13 +59,13 @@ const Archive = () => {
                                 transition={{ duration: 0.1 }}
                             >
                                 <ArchiveCard
-                                    title="Proje adı"
-                                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
-                                    listItems={['React', 'Tailwind', 'Next.js']}
-                                    link="https://www.google.com"
+                                    title="Resim Arama Motoru"
+                                    des="React.js ve Tailwind Css ile geliştirdiğim bu projede Unsplash API kullanarak resim arama motoru geliştirdim."
+                                    listItems={['React', 'Tailwind', 'API']}
+                                    link="https://github.com/Muhammedersln/ImageSearch-React"
                                 />
                             </motion.div>
-                            <motion.div
+                            {/* <motion.div
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 0.1 }}
@@ -87,7 +88,7 @@ const Archive = () => {
                                     listItems={['React', 'Tailwind', 'Next.js']}
                                     link="https://www.google.com"
                                 />
-                            </motion.div>
+                            </motion.div> */}
                         </>
                     )
                 }

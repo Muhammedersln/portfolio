@@ -1,6 +1,9 @@
 "use client";
 import React, { useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/assets/images/logo.png";
+
 import { MdOutlineClose } from 'react-icons/md'
 import { motion } from "framer-motion";
 import {
@@ -29,8 +32,9 @@ const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
+          className="flex-shrink-0"
         >
-          LOGO
+          <Image src={logo} alt="Logo" width={170}/>
         </motion.div>
         {/* ETİKETLER */}
         <div className="hidden md:flex items-center gap-7">
