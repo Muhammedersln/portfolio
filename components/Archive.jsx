@@ -65,30 +65,19 @@ const Archive = () => {
                                     link="https://github.com/Muhammedersln/ImageSearch-React"
                                 />
                             </motion.div>
-                            {/* <motion.div
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ duration: 0.1 }}
-                            >
-                                <ArchiveCard
-                                    title="Proje adı"
-                                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
-                                    listItems={['React', 'Tailwind', 'Next.js']}
-                                    link="https://www.google.com"
-                                />
-                            </motion.div>
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 0.1 }}
                             >
                                 <ArchiveCard
-                                    title="Proje adı"
-                                    des="Proje açıklaması lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
-                                    listItems={['React', 'Tailwind', 'Next.js']}
-                                    link="https://www.google.com"
+                                    title="BasicMeetingApp"
+                                    des=".Net Core ile basit bir toplantı uygulaması geliştirdim. Bu uygulama, toplantı oluşturma, katılımcı ekleme işlemlerini yapar."
+                                    listItems={['.Net', 'C#', 'MVC']}
+                                    link="https://github.com/Muhammedersln/BasicMeetingApp"
                                 />
-                            </motion.div> */}
+                            </motion.div>
+
                         </>
                     )
                 }

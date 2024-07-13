@@ -13,7 +13,7 @@ const Projects = () => {
                 {/* Proje 1 */}
                 <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
                     <div className='flex flex-col xl:flex-row gap-6'>
-                        <a className='w-full xl:w-1/2 h-auto relative group' href="" target='_blank'>
+                        <a className='w-full xl:w-1/2 h-auto relative group' href="https://github.com/Muhammedersln/Graduation-Project--Football-Analysis" target='_blank'>
                             <div>
                                 <Image
                                     className='w-full h-full object-contain'
