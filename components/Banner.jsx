@@ -40,7 +40,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-third font-medium"
       >
-        Turgut Özal Üniversitesi Yazılım Mühendisliği bölümünden mezun oldum ve 23 yaşındayım. Python, React ve .NET dillerinde bilgiliyim ve bu alanlarda kendimi sürekli geliştirmeye çalışıyorum. Yazılım dünyasında yeni teknolojilerle projeler yapmayı ve bu süreçte kendimi geliştirmeyi seviyorum. Portföyümde yer alan projelere göz atabilirsiniz.
+        Turgut Özal Üniversitesi Yazılım Mühendisliği bölümünden mezun oldum ve 23 yaşındayım. React ve .NET teknolojilerine hakimim ve bu alanlarda kendimi sürekli geliştirmeye çalışıyorum. Yazılım dünyasında yeni teknolojilerle projeler yapmayı ve bu süreçte kendimi geliştirmeyi seviyorum. Portföyümde yer alan projelere göz atabilirsiniz.
       </motion.p>
       <motion.button
         initial={{ y: 10, opacity: 0 }}

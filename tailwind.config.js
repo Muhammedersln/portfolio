@@ -20,7 +20,6 @@ module.exports = {
         light: "#DEEFE7",
         dark:"#006a96",
         dark2:"#003550"
-        
       },
       maxWidth:{
         container: "1440px",

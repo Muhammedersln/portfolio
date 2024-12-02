@@ -26,11 +26,10 @@ const Archive = () => {
                     link="https://github.com/Muhammedersln/EraslanMedia-web-digital-market"
                 />
                 <ArchiveCard
-                    title="Mami Flix"
-                    des="React.js  ile geliştirdiğim Netflix benzeri film ve dizi platformu. 
-                    Tailwind Css ile tasarlanmıştır. API üzerinden veri çekilerek oluşturulmuştur."
-                    listItems={['React', 'API', 'Next.js']}
-                    link="https://github.com/Muhammedersln/MamiFlix"
+                    title="NetCore-APIWeb-NLayer-CleanArchitecture"
+                    des=".Net Core ile geliştirdiğim bu proje, N-Katmanlı Mimari ve Temiz Mimarileri kullanarak geliştirilmiş bir proje. Proje, Web API ve MVC katmanlarına sahiptir."
+                    listItems={['.NET', 'NLayer', 'Web API']}
+                    link="https://github.com/Muhammedersln/NetCore-APIWeb-Nlayer-CleanArchitecture"
                 />
                 <ArchiveCard
                     title="Portfolio"
@@ -39,20 +38,46 @@ const Archive = () => {
                     link="https://www.muhammederaslan.com"
                 />
                 <ArchiveCard
-                    title="Unity RunController"
-                    des="Unity oyun moturu ile geliştirdiğim Hyper Casual platform oyunu. Oyunun amacı, karakteri engellerden kaçırarak maksimum skor yapmaktır."
-                    listItems={['Unity', 'C#', 'Blender']}
-                    link="https://github.com/Muhammedersln/Unity-RunController"
+                    title="HotelCenter-.NET"
+                    des=".Net Core ile geliştirdiğim bu proje, otel rezervasyonu yapabileceğiniz bir uygulamadır. MVC ve Web API katmanlarına sahiptir."
+                    listItems={['.NET', 'MVC', 'Web API']}
+                    link="https://github.com/Muhammedersln/HotelCenter-.NET"
                 />
                 <ArchiveCard
-                    title="Hava Durumu"
-                    des="Next.js ile geliştirdiğim bu projede hava durumu bilgilerini gösteren bir uygulama geliştirdim. Tasarımı Tailwind Css ile yapılmıştır."
-                    listItems={['React', 'Tailwind', 'Next.js']}
-                    link="https://weather-app-sooty-eta.vercel.app/"
+                    title="Mami Flix"
+                    des="React.js  ile geliştirdiğim Netflix benzeri film ve dizi platformu. 
+                    Tailwind Css ile tasarlanmıştır. API üzerinden veri çekilerek oluşturulmuştur."
+                    listItems={['React', 'API', 'Next.js']}
+                    link="https://mami-flix.vercel.app/"
                 />
+
                 {
                     show && (
                         < >
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 0.1 }}
+                            >
+                                <ArchiveCard
+                                    title="Flight-Reservation-React"
+                                    des="React.js ve Tailwind Css ile geliştirdiğim bu projede, uçak rezervasyonu yapabileceğiniz bir uygulama geliştirdim."
+                                    listItems={['React', 'Tailwind', 'API']}
+                                    link="https://github.com/Muhammedersln/Flight-Reservation-React"
+                                />
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 0.1 }}
+                            >
+                                <ArchiveCard
+                                    title="BackgroudRemover-Python"
+                                    des="Python ile geliştirdiğim bu projede, resimlerin arka planlarını otomatik olarak kaldıran bir uygulama geliştirdim."
+                                    listItems={['Python', 'OpenCV', 'Numpy']}
+                                    link="https://github.com/Muhammedersln/BackgroudRemover-Python"
+                                />
+                            </motion.div>
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
@@ -63,6 +88,18 @@ const Archive = () => {
                                     des=".NET ile basit düzeyde kurs-öğrenci ilişkisine sahip kurs uygulaması"
                                     listItems={['.NET', 'C#', 'Identity']}
                                     link="https://github.com/Muhammedersln/CourseAppwithdotNET"
+                                />
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 0.1 }}
+                            >
+                                <ArchiveCard
+                                    title="Unity RunController"
+                                    des="Unity oyun moturu ile geliştirdiğim Hyper Casual platform oyunu. Oyunun amacı, karakteri engellerden kaçırarak maksimum skor yapmaktır."
+                                    listItems={['Unity', 'C#', 'Blender']}
+                                    link="https://github.com/Muhammedersln/Unity-RunController"
                                 />
                             </motion.div>
                             <motion.div
@@ -87,6 +124,18 @@ const Archive = () => {
                                     des=".Net Core ile basit bir toplantı uygulaması geliştirdim. Bu uygulama, toplantı oluşturma, katılımcı ekleme işlemlerini yapar."
                                     listItems={['.Net', 'C#', 'MVC']}
                                     link="https://github.com/Muhammedersln/BasicMeetingApp"
+                                />
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 0.1 }}
+                            >
+                                <ArchiveCard
+                                    title="Hava Durumu"
+                                    des="Next.js ile geliştirdiğim bu projede hava durumu bilgilerini gösteren bir uygulama geliştirdim. Tasarımı Tailwind Css ile yapılmıştır."
+                                    listItems={['React', 'Tailwind', 'Next.js']}
+                                    link="https://weather-app-sooty-eta.vercel.app/"
                                 />
                             </motion.div>
                             <motion.div

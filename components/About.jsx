@@ -26,7 +26,7 @@ const About = () => {
               <span className="text-light">
                 <AiFillThunderbolt />
               </span>
-              Python
+              .NET
             </li>
             <li className="flex items-center gap-2">
               <span className="text-light">
@@ -44,13 +44,13 @@ const About = () => {
               <span className="text-light">
                 <AiFillThunderbolt />
               </span>
-              Java
+              AI
             </li>
             <li className="flex items-center gap-2">
               <span className="text-light">
                 <AiFillThunderbolt />
               </span>
-              .NET
+              Python
             </li>
           </ul>
         </div>
