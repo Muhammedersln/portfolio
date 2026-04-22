@@ -1,93 +1,54 @@
-import SectionTitle from "./SectionTitle";
-import { AiFillThunderbolt } from "react-icons/ai";
-import Image from "next/image";
-import profileImg from "../public/assets/images/profilphoto.jpg";
-import { motion } from "framer-motion";
+"use client";
+import React from "react";
+import { 
+  SiNextdotjs, 
+  SiReact, 
+  SiTypescript, 
+  SiNodedotjs, 
+  SiGooglecloud, 
+  SiDocker, 
+  SiSupabase,
+  SiTailwindcss,
+  SiExpo,
+  SiPostgresql,
+  SiExpress
+} from "react-icons/si";
 
 const About = () => {
   const skills = [
-    "React", ".NET", "C#", "Next.js", "AI", "Python"
+    { name: "Next.js", icon: <SiNextdotjs />, color: "text-black bg-slate-50 border-slate-200" },
+    { name: "React Native", icon: <SiReact />, color: "text-blue-500 bg-blue-50 border-blue-100" },
+    { name: "Expo", icon: <SiExpo />, color: "text-slate-900 bg-slate-50 border-slate-200" },
+    { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-600 bg-blue-50 border-blue-100" },
+    { name: "Node.js", icon: <SiNodedotjs />, color: "text-green-600 bg-green-50 border-green-100" },
+    { name: "Express", icon: <SiExpress />, color: "text-slate-700 bg-slate-50 border-slate-200" },
+    { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-500 bg-blue-50 border-blue-100" },
+    { name: "Supabase", icon: <SiSupabase />, color: "text-emerald-500 bg-emerald-50 border-emerald-100" },
+    { name: "GCP", icon: <SiGooglecloud />, color: "text-red-500 bg-red-50 border-red-100" },
+    { name: "Docker", icon: <SiDocker />, color: "text-blue-400 bg-blue-50 border-blue-100" },
+    { name: "Tailwind", icon: <SiTailwindcss />, color: "text-cyan-500 bg-cyan-50 border-cyan-100" }
   ];
 
   return (
-    <section
-      id="hakkımda"
-      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
-    >
-      <SectionTitle title="Hakkımda" />
-      <div className="flex flex-col lgl:flex-row gap-16">
-        <motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="w-full lgl:w-2/3 text-base text-third font-medium flex flex-col gap-4"
-        >
-          <div className="bg-dark2 p-6 rounded-xl shadow-lg hover:shadow-primary/10 transition-all duration-300">
-            <p className="text-secondary/90 leading-relaxed">
-              Merhaba, ben <span className="text-primary font-semibold">Muhammed Eraslan</span>. 
-              23 yaşındayım. Turgut Özal Üniversitesi Yazılım Mühendisliği bölümünden 2024&apos;te mezun oldum. 
-              Üniversite hayatım süresince <span className="text-primary">Java</span>, <span className="text-primary">Python</span>, 
-              <span className="text-primary">C#</span> ve <span className="text-primary">.NET</span> dillerinde kendimi geliştirme fırsatı buldum. 
-              Şu anda Python, React ve .NET dillerine hakimim ve bu alanda projeler geliştiriyorum. 
-              Deneyim kazanmak ve kendimi daha da geliştirmek için yeni projeler yapmayı hedefliyorum.
-            </p>
-          </div>
-
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-6"
-          >
-            <h3 className="text-primary font-semibold mb-4 text-lg">Teknolojiler & Yetenekler</h3>
-            <ul className="grid grid-cols-2 gap-3">
-              {skills.map((skill, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="flex items-center gap-2 bg-dark2 px-4 py-2 rounded-lg
-                    hover:bg-dark3 transition-colors duration-300 group cursor-default"
-                >
-                  <span className="text-primary group-hover:rotate-[20deg] transition-transform duration-300">
-                    <AiFillThunderbolt />
-                  </span>
-                  <span className="text-secondary group-hover:text-primary transition-colors duration-300">
-                    {skill}
-                  </span>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-        </motion.div>
-
-        {/* Foto */}
-        <motion.div 
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full lgl:w-1/3 h-80 relative group"
-        >
-          <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
-            <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
-              <div className="relative w-full h-full overflow-hidden rounded-lg">
-                <Image
-                  className="rounded-lg h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-300"
-                  src={profileImg}
-                  alt="profileImg"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent 
-                  opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-              </div>
-              <div className="hidden lgl:inline-block absolute w-full h-80 bg-primary/10 rounded-lg 
-                -top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300" />
+    <div className="w-full h-full bg-white rounded-bento p-6 border border-slate-100 shadow-bentoShadow flex flex-col gap-5 transition-all hover:shadow-xl duration-500">
+      <div className="flex flex-col gap-4">
+        <div className="flex items-center justify-between">
+          <h4 className="text-[11px] font-bold text-third/40 uppercase tracking-[0.2em]">Yetenekler</h4>
+          <span className="text-[10px] font-bold text-secondary bg-secondary/5 px-2 py-1 rounded-md">Stack</span>
+        </div>
+        <div className="grid grid-cols-2 gap-2">
+          {skills.map((skill, index) => (
+            <div 
+              key={index}
+              className={`flex items-center gap-2 px-3 py-2 rounded-xl border text-[11px] font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-default ${skill.color}`}
+            >
+              <span className="text-base">{skill.icon}</span>
+              <span>{skill.name}</span>
             </div>
-          </div>
-        </motion.div>
+          ))}
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,76 +1,79 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { AiOutlineMail, AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
+"use client";
+import React from 'react';
+import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineInstagram } from 'react-icons/ai';
+import { FaAppStoreIos } from 'react-icons/fa';
+import { HiOutlineGlobeAlt } from 'react-icons/hi';
 
 const Contact = () => {
     return (
-        <section id='iletişim' className='max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center'>
-            <p className='font-titleFont text-lg text-secondary font-semibold flex items-center tracking-wide'>
-                İletişim
-            </p>
-            <h2 className='font-titleFont text-5xl font-semibold text-primary'>Bana Ulaşın</h2>
-            <p className='max-w-[600px] text-center text-third mt-4'>
-                Yeni fırsatlar için her zaman açığım. İster bir soru sormak, ister merhaba demek isteyin, 
-                size en kısa sürede dönüş yapacağım.
-            </p>
-
-            <div className='flex flex-col md:flex-row gap-8 mt-12'>
-                {/* Email Card */}
-                <motion.a 
-                    href="mailto:muhammed.ersln@icloud.com"
-                    initial={{ y: 10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                    className='flex flex-col items-center justify-center p-8 rounded-lg bg-dark2 hover:bg-dark transition-colors duration-300 group'
-                >
-                    <AiOutlineMail className='text-4xl text-secondary group-hover:text-primary mb-4' />
-                    <h3 className='text-primary font-semibold mb-2'>Email</h3>
-                    <p className='text-third text-sm'>muhammed.ersln@icloud.com</p>
-                </motion.a>
-
-                {/* LinkedIn Card */}
-                <motion.a 
-                    href="https://www.linkedin.com/in/muhammed-eraslan-466049236/"
+        <div className="w-full flex flex-col gap-6">
+            {/* Social Grid */}
+            <div className="grid grid-cols-3 gap-4">
+                <a 
+                    href="https://www.linkedin.com/in/muhammed-eraslan-466049236/" 
                     target="_blank"
-                    initial={{ y: 10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className='flex flex-col items-center justify-center p-8 rounded-lg bg-dark2 hover:bg-dark transition-colors duration-300 group'
+                    className="flex flex-col items-center justify-center gap-2 p-4 rounded-[24px] bg-white border border-slate-100 hover:border-[#0077B5]/30 hover:bg-[#0077B5]/5 transition-all group shadow-bentoShadow"
                 >
-                    <AiOutlineLinkedin className='text-4xl text-secondary group-hover:text-primary mb-4' />
-                    <h3 className='text-primary font-semibold mb-2'>LinkedIn</h3>
-                    <p className='text-third text-sm'>Muhammed Eraslan</p>
-                </motion.a>
-
-                {/* GitHub Card */}
-                <motion.a 
-                    href="https://github.com/Muhammedersln"
+                    <AiOutlineLinkedin className="text-3xl text-[#0077B5] group-hover:scale-110 transition-transform" />
+                </a>
+                <a 
+                    href="https://github.com/Muhammedersln" 
                     target="_blank"
-                    initial={{ y: 10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    className='flex flex-col items-center justify-center p-8 rounded-lg bg-dark2 hover:bg-dark transition-colors duration-300 group'
+                    className="flex flex-col items-center justify-center gap-2 p-4 rounded-[24px] bg-white border border-slate-100 hover:border-black/30 hover:bg-black/5 transition-all group shadow-bentoShadow"
                 >
-                    <AiOutlineGithub className='text-4xl text-secondary group-hover:text-primary mb-4' />
-                    <h3 className='text-primary font-semibold mb-2'>GitHub</h3>
-                    <p className='text-third text-sm'>@Muhammedersln</p>
-                </motion.a>
+                    <AiOutlineGithub className="text-3xl text-black group-hover:scale-110 transition-transform" />
+                </a>
+                <a 
+                    href="https://www.instagram.com/muhammed.ersln" 
+                    target="_blank"
+                    className="flex flex-col items-center justify-center gap-2 p-4 rounded-[24px] bg-white border border-slate-100 hover:border-[#E4405F]/30 hover:bg-[#E4405F]/5 transition-all group shadow-bentoShadow"
+                >
+                    <AiOutlineInstagram className="text-3xl text-[#E4405F] group-hover:scale-110 transition-transform" />
+                </a>
             </div>
 
-            <motion.div 
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className='mt-12'
+            {/* Mobile App Card */}
+            <a 
+                href="https://apps.apple.com/tr/app/aboniko-abonelik-takip/id6759045978" 
+                target="_blank"
+                className="w-full bg-[#1C1C1E] rounded-bento p-6 border border-white/10 shadow-xl flex items-center justify-between hover:scale-[1.02] transition-all group overflow-hidden relative"
             >
-                <a href="mailto:muhammed.ersln@icloud.com">
-                    <button className='px-8 py-4 rounded-lg border-2 border-secondary text-secondary hover:bg-secondary hover:text-bodyColor transition-colors duration-300 font-semibold tracking-wide'>
-                        Mesaj Gönder
-                    </button>
-                </a>
-            </motion.div>
-        </section>
-    )
-}
+                <div className="flex items-center gap-4 relative z-10">
+                    <div className="p-3 rounded-2xl bg-white text-black shadow-lg">
+                        <FaAppStoreIos className="text-2xl" />
+                    </div>
+                    <div className="flex flex-col">
+                        <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">App Store</span>
+                        <span className="text-sm font-bold text-white">Aboniko &bull; Yayında</span>
+                    </div>
+                </div>
+                <div className="w-12 h-12 rounded-full bg-blue-500/20 blur-2xl absolute -right-2 -top-2" />
+                <div className="w-12 h-12 rounded-full bg-purple-500/20 blur-2xl absolute -left-2 -bottom-2" />
+                <span className="text-xs font-bold text-white/20 group-hover:text-white/40 transition-colors">Yükle &rarr;</span>
+            </a>
 
-export default Contact
+            {/* Eraslan Medya Card */}
+            <a 
+                href="https://www.eraslanmedya.com" 
+                target="_blank"
+                className="w-full bg-white rounded-bento p-6 border border-slate-100 shadow-bentoShadow flex items-center justify-between hover:border-secondary/20 hover:bg-slate-50 transition-all group relative overflow-hidden"
+            >
+                <div className="flex items-center gap-4 relative z-10">
+                    <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-sm">
+                        <HiOutlineGlobeAlt className="text-2xl" />
+                    </div>
+                    <div className="flex flex-col">
+                        <span className="text-[10px] font-bold text-third uppercase tracking-widest">Production</span>
+                        <span className="text-sm font-bold text-primary">eraslanmedya.com</span>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2 relative z-10">
+                    <span className="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md uppercase tracking-wider">Live</span>
+                    <span className="text-xs font-bold text-third group-hover:text-primary transition-colors">&rarr;</span>
+                </div>
+            </a>
+        </div>
+    );
+};
+
+export default Contact;

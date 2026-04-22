@@ -1,57 +1,76 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+import profileImg from "../public/assets/images/profilphoto.jpg";
 import { motion } from "framer-motion";
 
 const Banner = () => {
-
-  const handleScroll = (e, target) => {
-    e.preventDefault();
-    const element = document.querySelector(target);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   return (
-    <section
-      className="max-w-contentContainer mx-auto py-10 md:py-24 flex flex-col gap-4 lg:gap-8 md:px-10 xl:px-4"
-      id="anasayfa"
-    >
-      <motion.h3
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-        className="text-lg  tracking-wide font-medium text-primary"
-      >
-        Merhaba, benim adım{" "}
-      </motion.h3>
-      <motion.h1
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-4xl text-primary lg:text-6xl font-semibold flex flex-col">
-        Muhammed Eraslan
-        <span className=" text-secondary mt-2 lg:mt-4">
-          Yazılım Mühendisiyim.
-        </span>
-      </motion.h1>
+    <div className="w-full h-full bg-white rounded-bento p-8 md:p-12 border border-slate-100 shadow-bentoShadow flex flex-col justify-center gap-8 group relative overflow-hidden transition-all hover:shadow-xl duration-500">
+      
+      <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-8">
+        <div className="flex flex-col gap-6">
+          <motion.div
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="text-secondary font-bold tracking-widest uppercase text-[10px] px-3 py-1 bg-secondary/5 rounded-full border border-secondary/10 inline-block">
+              Full Stack Developer
+            </span>
+          </motion.div>
+          
+          <motion.h1
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight"
+          >
+            Muhammed <br />
+            <span className="text-secondary">Eraslan</span>
+          </motion.h1>
+        </div>
+
+        {/* Profile Image */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="shrink-0"
+        >
+          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-slate-50 shadow-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 hover:rotate-3">
+            <Image 
+              src={profileImg} 
+              alt="Muhammed Eraslan" 
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
+        </motion.div>
+      </div>
+
       <motion.p
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
-        className="text-base md:max-w-[650px] text-third font-medium"
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-base md:text-lg text-third max-w-[550px] leading-relaxed font-medium"
       >
-        Turgut Özal Üniversitesi Yazılım Mühendisliği bölümünden mezun oldum ve 23 yaşındayım. React ve .NET teknolojilerine hakimim ve bu alanlarda kendimi sürekli geliştirmeye çalışıyorum. Yazılım dünyasında yeni teknolojilerle projeler yapmayı ve bu süreçte kendimi geliştirmeyi seviyorum. Portföyümde yer alan projelere göz atabilirsiniz.
+        Next.js, React Native ve Cloud teknolojileriyle ölçeklenebilir dijital ürünler inşa ediyorum. Teknik altyapıyı kuran ve ürünün büyümesine katkı sağlayan bir geliştiriciyim.
       </motion.p>
-      <motion.button
+      
+      <motion.div
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.9 }}
-        onClick={(e) => handleScroll(e, "#projeler")}
-        className="w-52 h-14 text-sm border border-primary rounded-md text-primary tracking-wide hover:bg-primary hover:text-bodyColor duration-300"
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="flex items-center gap-4 pt-4 border-t border-slate-50"
       >
-        Projelerime Göz At.
-      </motion.button>
-    </section>
+        <div className="relative flex h-2.5 w-2.5">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+        </div>
+        <span className="text-xs font-bold text-third uppercase tracking-wider">İstanbul, Türkiye &bull; Yeni fırsatlara açık</span>
+      </motion.div>
+    </div>
   );
 };
 

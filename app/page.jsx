@@ -1,49 +1,75 @@
 "use client";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import LeftSide from "@/components/LeftSide";
-import RightSide from "@/components/RightSide";
 import Banner from "@/components/Banner";
-import { motion } from "framer-motion";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Archive from "@/components/Archive";
 import Contact from "@/components/Contact";
+import Education from "@/components/Education";
+import Stats from "@/components/Stats";
+import EmailCard from "@/components/EmailCard";
 import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
-    <div className="w-full h-screen bg-bodyColor overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-dark2/20 scrollbar-thumb-dark ">
-      <Navbar></Navbar>
-      <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
-        {/* SolTaraf */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="hidden xl:inline-flex w-32 h-full left-0 fixed bottom-0"
-        >
-          <LeftSide></LeftSide>
-        </motion.div>
-        {/* orta */}
-        <div className=" h-[88vh] w-full mx-auto p-4">
-          <Banner/>
-          <About/>
-          <Projects/>
-          <Archive/>
-          <Contact/>
-          <Footer/>
-          
+    <main className="w-full min-h-screen bg-bodyColor text-primary p-4 md:p-8 lgl:p-12 font-bodyFont">
+      <div className="max-w-[1200px] mx-auto flex flex-col gap-6">
+        
+        {/* Top Section: Hero & Stack/Email */}
+        <div className="grid grid-cols-1 lgl:grid-cols-3 gap-6 items-stretch">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="lgl:col-span-2"
+          >
+            <Banner />
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="flex flex-col gap-6 h-full"
+          >
+            <div className="flex-1">
+              <About />
+            </div>
+            <EmailCard />
+          </motion.div>
         </div>
-        {/* SağTaraf */}
-        <motion.div
+
+        {/* Middle Section: Projects & Right Side Info */}
+        <div className="grid grid-cols-1 lgl:grid-cols-3 gap-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="lgl:col-span-2"
+          >
+            <Projects />
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex flex-col gap-6"
+          >
+            <Contact />
+            <Archive />
+            <Education />
+            <Stats />
+          </motion.div>
+        </div>
+
+        {/* Bottom Section: Footer */}
+        <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0"
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <RightSide></RightSide>
+          <Footer />
         </motion.div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -13,13 +13,13 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        primary: "#E2E8F0",
-        secondary: "#60A5FA",
-        third: "#94A3B8",
-        bodyColor: "#0F172A",
-        light: "#F1F5F9",
-        dark: "#1E293B",
-        dark2: "#1E293B"
+        primary: "#0F172A",
+        secondary: "#2563EB",
+        third: "#475569",
+        bodyColor: "#F8FAFC",
+        light: "#FFFFFF",
+        dark: "#E2E8F0",
+        dark2: "#CBD5E1"
       },
       maxWidth:{
         container: "1440px",
@@ -37,8 +37,12 @@ module.exports = {
         lgl:"1024px",
         xl:"1280px",
       },
+      borderRadius: {
+        'bento': '32px',
+      },
       boxShadow : {
-        navbarShadow :"0 10px 30px -10px rgba(2,12,27,0.7)",
+        bentoShadow: "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+        navbarShadow :"0 10px 30px -10px rgba(0,0,0,0.1)",
       }
     },
   },
