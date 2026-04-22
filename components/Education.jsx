@@ -17,7 +17,7 @@ const Education = () => {
 
             <div className="flex flex-col gap-1">
                 <h4 className="text-lg font-bold text-primary leading-tight">
-                    Bachelor's in Software Engineering
+                    Bachelor&apos;s in Software Engineering
                 </h4>
                 <p className="text-sm font-medium text-third italic">
                     Malatya Turgut Özal University
